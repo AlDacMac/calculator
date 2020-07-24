@@ -1,0 +1,22 @@
+body {
+}
+
+main {
+    display: grid;
+    width: 50vmin;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(5, 20%);
+    grid-template-areas: 
+        "display display display display"
+        "allClear clear clear divide"
+        "seven eight nine multiply"
+        "four five six minus"
+        "one two three plus"
+        "zero zero period equals"
+    ;
+}
+
+#display {
+    background-color: rgb(36, 36, 36);
+    color: white;
+}
