@@ -1,6 +1,8 @@
 let displayValue = "0";
 let display = document.querySelector("#display");
 let periodIn = false;
+firstValue = null;
+secondValue = null;
 
 const add = (a, b) => {a + b};
 const subtract = (a, b) => {a - b};
@@ -37,6 +39,7 @@ numButtons.forEach((button) => {
 let clear = document.querySelector("#clear")
 clear.addEventListener('mouseup', () => {
     displayValue = "0"
+    periodIn = false;
     updateDisplay();
 });
 
